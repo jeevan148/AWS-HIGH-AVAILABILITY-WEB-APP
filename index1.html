@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy New Year 2027</title>
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #000428, #004e92);
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            padding-top: 100px;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            margin: auto;
+            width: 70%;
+            border-radius: 20px;
+            box-shadow: 0 0 25px gold;
+        }
+
+        h1 {
+            color: gold;
+            font-size: 35px;
+        }
+
+        #count {
+            font-size: 100px;
+            color: white;
+            font-weight: bold;
+            margin: 30px;
+            text-shadow: 0 0 20px cyan;
+        }
+
+        #result {
+            font-size: 30px;
+            color: #FFD700;
+            font-weight: bold;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🌍💖🥰💕😘...Countdown Start...😘💖🌍🥰💕</h1>
+
+    <div id="count">10</div>
+
+    <div id="result"></div>
+
+</div>
+
+<script>
+    let i = 10;
+
+    let countdown = setInterval(function() {
+        document.getElementById("count").innerHTML = i;
+        i--;
+
+        if (i < 0) {
+            clearInterval(countdown);
+            document.getElementById("count").innerHTML = "🎆";
+            document.getElementById("result").innerHTML =
+            "😘🥰💖🥰💫✨✴️...HAPPY SANKRANTI-2027...😘🥰💖🥰💫✨✴️";
+        }
+    }, 1000);
+</script>
+
+</body>
+</html>
